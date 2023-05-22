@@ -12,10 +12,11 @@ inputs:
     description: "Folder where requirements.txt has to be saved in"
     required: true
     default: "requirements.txt"
-  PROJECT_NAME:
-    description: "Name of the project to include in the commit"
+    
+  RECURSIVE:
+    description: "Should the script collect the requirements recursively?"
     required: true
-    default: ""
+    default: 1
 
 
 runs:
