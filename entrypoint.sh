@@ -6,6 +6,7 @@ set -e
 
 if [$INPUT_TOKEN]
 then
+  echo "got a token!"
   git config --global url."https://${INPUT_TOKEN}:@github.com/".insteadOf "https://github.com/"
 fi
 
