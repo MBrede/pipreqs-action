@@ -8,7 +8,8 @@ if [[ -z $INPUT_TOKEN ]];
 then
   echo "got no token!"
 else
-  git config --global url."https://${INPUT_TOKEN}@github.com/".insteadOf "https://github.com/"
+  git remote remove origin
+  git remote add origin "https://${INPUT_TOKEN}@github.com/${INPUT_REPO}"
 fi
 
 sh -c "ls"

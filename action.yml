@@ -18,6 +18,11 @@ inputs:
     required: true
     default: 1
 
+  REPO:
+    description: "Repository to push to"
+    required: true
+    default: "${{ github.repository }}"
+
   TOKEN:
     description: "Token to use for accessing private repositories"
     required: false
