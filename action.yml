@@ -18,7 +18,7 @@ inputs:
     required: true
     default: 1
 
-  RECURSIVE:
+  TOKEN:
     description: "Token to use for accessing private repositories"
     required: false
     default: ""
