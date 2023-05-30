@@ -5,7 +5,7 @@ python /collect_reqs.py $INPUT_REQUIREMENT_PATH $INPUT_PROJECT_PATH $INPUT_RECUR
 set -e
 sh -c "ls"
 
-sh -c "git config --global user.name '${GITHUB_ACTOR}' \
+sh -c "git config --global --add safe.directory /github/workspace && git config --global user.name '${GITHUB_ACTOR}' \
       && git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com' \
       && git add requirements.txt && git commit -m 'Updated requirements file.' --allow-empty \
       && git push -u origin HEAD"
