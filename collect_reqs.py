@@ -18,6 +18,7 @@ def main(args):
     reqs = [req for req in list(set(reqs)) if req]
     with open(args[0], 'w') as f:
         f.writelines(reqs)
+    print(reqs)
 
 
 if __name__ == '__main__':
