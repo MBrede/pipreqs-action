@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-python collect_reqs.py $INPUT_REQUIREMENT_PATH $INPUT_PROJECT_PATH $RECURSIVE
+python /collect_reqs.py $INPUT_REQUIREMENT_PATH $INPUT_PROJECT_PATH $RECURSIVE
 
 set -e
 sh -c "ls"
