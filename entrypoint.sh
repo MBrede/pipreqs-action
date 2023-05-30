@@ -8,7 +8,7 @@ if [[ -z $INPUT_TOKEN ]];
 then
   echo "got no token!"
 else
-  git config --global url."https://${INPUT_TOKEN}:@github.com/".insteadOf "https://github.com/"
+  git config --global url."https://${INPUT_TOKEN}@github.com/".insteadOf "https://github.com/"
 fi
 
 sh -c "ls"
