@@ -4,7 +4,7 @@ python /collect_reqs.py $INPUT_REQUIREMENT_PATH $INPUT_PROJECT_PATH $INPUT_RECUR
 
 set -e
 
-if [$INPUT_TOKEN]
+if [[ $INPUT_TOKEN ]]
 then
   echo "got a token!"
   git config --global url."https://${INPUT_TOKEN}:@github.com/".insteadOf "https://github.com/"
