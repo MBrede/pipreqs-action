@@ -18,6 +18,11 @@ inputs:
     required: true
     default: 1
 
+  RECURSIVE:
+    description: "Token to use for accessing private repositories"
+    required: false
+    default: ""
+
 
 runs:
   using: "docker"
