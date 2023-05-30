@@ -13,4 +13,4 @@ if !(git diff --exit-code --stat); then exit 0; fi
 
 git add -A
 git commit -m "Updated requirements file"
-git push -u origin HEAD
+git push
