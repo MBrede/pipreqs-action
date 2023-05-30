@@ -5,7 +5,7 @@ python /collect_reqs.py $INPUT_REQUIREMENT_PATH $INPUT_PROJECT_PATH $INPUT_RECUR
 set -e
 sh -c "ls"
 
-if[$INPUT_TOKEN]
+if [$INPUT_TOKEN]
 then
   sh -c "echo '${INPUT_TOKEN}' > token.txt"
   sh -c "gh auth login --with-token < token.txt"
